@@ -7526,6 +7526,7 @@
                     prevEl: ".swiper-button-prev",
                     nextEl: ".swiper-button-next"
                 },
+                breakpoints: {},
                 on: {}
             });
             if (document.querySelector(".updates-slider__slider")) new core(".updates-slider__slider", {
@@ -7558,6 +7559,33 @@
                     1201: {
                         slidesPerView: 4,
                         spaceBetween: 0
+                    }
+                },
+                on: {}
+            });
+            if (document.querySelector(".reportage-photo__slider")) new core(".reportage-photo__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 2,
+                spaceBetween: 0,
+                autoHeight: true,
+                speed: 800,
+                navigation: {
+                    prevEl: ".reportage-button-prev",
+                    nextEl: ".reportage-button-next"
+                },
+                breakpoints: {
+                    52: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    380: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    1200: {
+                        slidesPerView: 2
                     }
                 },
                 on: {}
