@@ -8803,6 +8803,15 @@
             }
             if (!event.target.closest(".header-content__search-box")) searchBody.classList.remove("header-content__search-box_active");
         }
+        const rangeMovie = document.getElementById("movieRange");
+        function movieSlider() {
+            let valPercent = rangeMovie.value / rangeMovie.max * 100;
+            rangeMovie.style.background = `linear-gradient(to right, #D1AA41 ${valPercent}%, #E2E2E2 ${valPercent}%)`;
+        }
+        rangeMovie.addEventListener("input", (function() {
+            movieSlider();
+        }));
+        movieSlider();
         window["FLS"] = true;
         isWebp();
         menuInit();

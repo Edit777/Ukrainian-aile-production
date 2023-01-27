@@ -2,7 +2,7 @@
 <html lang="ua">
 
 <head>
-	<title>ReportagePhotoPage</title>
+	<title>ReportageVideoPage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -90,68 +90,31 @@
 		<main class="page reportage-photo-page">
 			<div class="reportage-photo-page__container reportage-photo">
 				<div class="reportage-photo__content">
-					<div class="reportage-photo__sliders">
-						<div class="reportage-photo__slider-box">
-							<div class="reportage-photo__slider swiper">
-								<h3 class="reportage-photo__slider-title">
-									Репортаж Рабії Сойтюрк та Джанера Топчу «Hürriyet» (1 випуск)
-								</h3>
-								<div class="reportage-photo__wrapper swiper-wrapper">
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/1.webp" type="image/webp"><img src="img/main-page/reportage-photo/1.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/2.webp" type="image/webp"><img src="img/main-page/reportage-photo/2.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/1.webp" type="image/webp"><img src="img/main-page/reportage-photo/1.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/2.webp" type="image/webp"><img src="img/main-page/reportage-photo/2.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/1.webp" type="image/webp"><img src="img/main-page/reportage-photo/1.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/2.webp" type="image/webp"><img src="img/main-page/reportage-photo/2.jpg" alt="image"></picture>
-									</div>
-								</div>
-								<div class="reportage-button-prev _icon-long-arrow"></div>
-								<div class="reportage-button-next _icon-long-arrow"></div>
+					<div class="reportage-photo__video reportage-video">
+						<h3 class="reportage-video__title">Репортаж Рабія Сойтюрк та Джанер Топчу на «Onedio»</h3>
+						<div class="reportage-video__video-box">
+							<video class="reportage-video__video" poster="img/main-page/reportage-video/poster.jpg">
+								<source src="img/main-page/reportage-video/test.mp4" type="video/mp4">
+							</video>
+							<div class="reportage-video__watermark">
+								<img src="img/main-page/reportage-video/watermark.svg" alt="watermark">
 							</div>
-						</div>
-						<div class="reportage-photo__slider-box">
-							<div class="reportage-photo__slider swiper">
-								<h3 class="reportage-photo__slider-title">
-									Репортаж Рабії Сойтюрк та Джанера Топчу «Hürriyet» (1 випуск)
-								</h3>
-								<div class="reportage-photo__wrapper swiper-wrapper">
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/3.webp" type="image/webp"><img src="img/main-page/reportage-photo/3.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/4.webp" type="image/webp"><img src="img/main-page/reportage-photo/4.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/3.webp" type="image/webp"><img src="img/main-page/reportage-photo/3.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/4.webp" type="image/webp"><img src="img/main-page/reportage-photo/4.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/3.webp" type="image/webp"><img src="img/main-page/reportage-photo/3.jpg" alt="image"></picture>
-									</div>
-									<div class="reportage-photo__slide swiper-slide">
-										<picture><source srcset="img/main-page/reportage-photo/4.webp" type="image/webp"><img src="img/main-page/reportage-photo/4.jpg" alt="image"></picture>
-									</div>
+							<button class="reportage-video__play _icon-big-play"></button>
+							<div class="reportage-video__controls video-controls">
+								<button class="video-controls__play _icon-small-play"></button>
+								<progress class="video-controls__progress"></progress>
+								<span class="video-controls__time">00:00-00:00</span>
+								<div class="video-controls__range-box">
+									<button class="video-controls__range-icon _icon-sound"></button>
+									<input class="video-controls__range" type="range" id="movieRange" min="0" max="100" value="65">
 								</div>
-								<div class="reportage-button-prev _icon-long-arrow"></div>
-								<div class="reportage-button-next _icon-long-arrow"></div>
+								<button class="video-controls__full-screen _icon-increase"></button>
+								<button class="video-controls__settings _icon-gear"></button>
 							</div>
 						</div>
 					</div>
 					<div class="reportage-photo__reportage">
-						<h3 class="reportage-photo__reportage-title">Рекомендовані репортажі
+						<h3 class="reportage-photo__reportage-title reportage-photo__reportage-title_small">Рекомендовані репортажі
 						</h3>
 						<ul class="reportage-photo__reportage-list">
 							<li class="reportage-photo__reportage-list-item">
@@ -176,7 +139,8 @@
 					<div class="reportage-photo__form-box">
 						<h3 class="reportage-photo__form-title">Залишити відгук</h3>
 						<form action="" class="reportage-photo__form reportage-photo-form">
-							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Ваше ім’я" class="reportage-photo-form__input">
+							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Ваше ім’я"
+								class="reportage-photo-form__input">
 							<textarea class="reportage-photo-form__textarea" placeholder="Написати коментар"></textarea>
 							<button type="submit" class="reportage-photo-form__button">Надіслати</button>
 						</form>
@@ -194,11 +158,12 @@
 									<div class="reportage-photo-rate__block">
 										<div class="reportage-photo-rate__box">
 											<span class="reportage-photo-rate__number">3</span>
-											<button onclick="redLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart"></button>
+											<butto class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart"></butto>
 										</div>
 										<div class="reportage-photo-rate__box">
 											<span class="reportage-photo-rate__number">0</span>
-											<button onclick="darkLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
+											<button
+												class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
 										</div>
 									</div>
 								</div>
@@ -216,11 +181,12 @@
 									<div class="reportage-photo-rate__block">
 										<div class="reportage-photo-rate__box">
 											<span class="reportage-photo-rate__number">3</span>
-											<button onclick="redLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart"></button>
+											<butto class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart"></butto>
 										</div>
 										<div class="reportage-photo-rate__box">
 											<span class="reportage-photo-rate__number">0</span>
-											<button onclick="darkLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
+											<button
+												class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
 										</div>
 									</div>
 								</div>
