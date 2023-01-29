@@ -8803,15 +8803,17 @@
             }
             if (!event.target.closest(".header-content__search-box")) searchBody.classList.remove("header-content__search-box_active");
         }
-        const rangeMovie = document.getElementById("movieRange");
+        const rangeMovie = document.querySelector(".video-controls__range");
         function movieSlider() {
             let valPercent = rangeMovie.value / rangeMovie.max * 100;
             rangeMovie.style.background = `linear-gradient(to right, #D1AA41 ${valPercent}%, #E2E2E2 ${valPercent}%)`;
         }
-        rangeMovie.addEventListener("input", (function() {
+        if (!!document.querySelector(".video-controls__range")) {
+            rangeMovie.addEventListener("input", (function() {
+                movieSlider();
+            }));
             movieSlider();
-        }));
-        movieSlider();
+        }
         window["FLS"] = true;
         isWebp();
         menuInit();
