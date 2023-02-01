@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230129195239">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230201204714">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -177,8 +177,8 @@
 						<div class="reportage-photo__form-box">
 							<h3 class="reportage-photo__form-title">Залишити відгук</h3>
 							<form action="" class="reportage-photo__form reportage-photo-form">
-								<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Ваше ім’я" class="reportage-photo-form__input">
-								<textarea class="reportage-photo-form__textarea" placeholder="Написати коментар"></textarea>
+								<input autocomplete="off" type="text" name="form[]" data-required placeholder="Ваше ім’я" class="reportage-photo-form__input">
+								<textarea class="reportage-photo-form__textarea" placeholder="Написати коментар" data-error="*Заповніть поля" data-required></textarea>
 								<button type="submit" class="reportage-photo-form__button">Надіслати</button>
 							</form>
 						</div>
@@ -195,11 +195,12 @@
 										<div class="reportage-photo-rate__block">
 											<div class="reportage-photo-rate__box">
 												<span class="reportage-photo-rate__number">3</span>
-												<button onclick="redLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart"></button>
+												<butto class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart">
+												</butto>
 											</div>
 											<div class="reportage-photo-rate__box">
 												<span class="reportage-photo-rate__number">0</span>
-												<button onclick="darkLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
+												<button class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
 											</div>
 										</div>
 									</div>
@@ -217,11 +218,11 @@
 										<div class="reportage-photo-rate__block">
 											<div class="reportage-photo-rate__box">
 												<span class="reportage-photo-rate__number">3</span>
-												<button onclick="redLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart"></button>
+												<button class="reportage-photo-rate__button reportage-photo-rate__button_like _icon-heart"></button>
 											</div>
 											<div class="reportage-photo-rate__box">
 												<span class="reportage-photo-rate__number">0</span>
-												<button onclick="darkLikeFunction(this)" class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
+												<button class="reportage-photo-rate__button reportage-photo-rate__button_dislike _icon-heart"></button>
 											</div>
 										</div>
 									</div>
@@ -265,7 +266,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230129195239"></script>
+	<script src="js/app.min.js?_v=20230201204714"></script>
 </body>
 
 </html>

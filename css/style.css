@@ -219,6 +219,15 @@ body {
   padding: 0 0.9375rem;
 }
 
+.form__error {
+  position: absolute;
+  bottom: 29%;
+  right: 12%;
+  font-weight: 300;
+  color: #F80000;
+  line-height: 1.2;
+}
+
 .select {
   min-width: 0;
   position: relative;
@@ -887,6 +896,10 @@ body {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: none;
+}
+
+.swiper-pagination {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .swiper-pagination-bullet-active {
@@ -1622,6 +1635,18 @@ body {
   color: #D1AA41;
 }
 
+.reportage-photo-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.0508578431)), color-stop(0.2%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.2%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.2%);
+}
+
+.reportage-photo-page__decor {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.0536589636)), color-stop(0.2%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.2%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.2%);
+}
+
 .reportage-photo__sliders {
   margin: 0 auto;
 }
@@ -1828,6 +1853,10 @@ input[type=range]::-ms-thumb {
   display: none;
 }
 
+.reportage-photo-form {
+  position: relative;
+}
+
 .reportage-photo-form__input {
   color: #2F4054;
   font-weight: 400;
@@ -1897,6 +1926,11 @@ input[type=range]::-ms-thumb {
   -o-transition: all 0.1s ease 0s;
   transition: all 0.1s ease 0s;
   color: transparent;
+}
+
+.reportage-photo-form__input._form-error {
+  border: 2px solid #F80000;
+  border-radius: 10px;
 }
 
 .reportage-photo-form__textarea {
@@ -1973,6 +2007,11 @@ input[type=range]::-ms-thumb {
   color: transparent;
 }
 
+.reportage-photo-form__textarea._form-error {
+  border: 2px solid #F80000;
+  border-radius: 10px;
+}
+
 .reportage-photo-form__button {
   text-align: center;
   margin: 0 auto;
@@ -2047,6 +2086,18 @@ input[type=range]::-ms-thumb {
 
 .reportage-photo-rate__button_dislike::before {
   color: #000000;
+}
+
+.film-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.0508578431)), color-stop(0.2%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.2%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.2%);
+}
+
+.film-page__decor {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.0536589636)), color-stop(0.2%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.2%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.2%);
 }
 
 .film-info__sub-title {
@@ -2234,6 +2285,18 @@ input[type=range]::-ms-thumb {
   border: 0.125rem solid #D1AA41;
 }
 
+.donate-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.0508578431)), color-stop(0.5%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.5%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.5%);
+}
+
+.donate-page__decor {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.0536589636)), color-stop(0.5%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.5%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.5%);
+}
+
 .donate__title {
   font-weight: 300;
   line-height: 1.15;
@@ -2243,14 +2306,25 @@ input[type=range]::-ms-thumb {
   line-height: 1.1333333333;
 }
 
+.donate__form {
+  position: relative;
+}
+
 .donate__form-title {
   font-weight: 300;
   line-height: 120%;
 }
 
-.payment__form {
-  background-color: #FFFFFF;
-  border-radius: 0.625rem;
+.payment-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.0508578431)), color-stop(0.5%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.5%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.5%);
+}
+
+.payment-page__decor {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.0536589636)), color-stop(0.5%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.5%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.5%);
 }
 
 .payment__button {
@@ -2270,6 +2344,11 @@ input[type=range]::-ms-thumb {
 
 .payment-form__img {
   border-radius: 0.3125rem;
+}
+
+.payment-form__inputs {
+  background-color: #FFFFFF;
+  border-radius: 0.625rem;
 }
 
 .payment-form__input-box {
@@ -2378,6 +2457,10 @@ input[type=range]::-ms-thumb {
   margin-bottom: 1.25rem;
 }
 
+.payment-form__input.form-error {
+  color: #F80000;
+}
+
 .payment-form__input-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2401,6 +2484,7 @@ input[type=range]::-ms-thumb {
 }
 
 .payment-form__text-check {
+  cursor: pointer;
   font-weight: 300;
   line-height: 100%;
   color: #2F4054;
@@ -2433,7 +2517,13 @@ input[type=range]::-ms-thumb {
   z-index: 2;
 }
 
-.not-found-page section {
+.not-found-page {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.0536589636)), color-stop(0.5%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.5%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.0536589636) 0%, rgba(255, 255, 255, 0) 0.5%);
+}
+
+.not-found-page__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2441,6 +2531,18 @@ input[type=range]::-ms-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.not-found-page__decor {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.0508578431)), color-stop(0.5%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.5%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.0508578431) 0%, rgba(255, 255, 255, 0) 0.5%);
 }
 
 .not-found-page__text {
@@ -2979,6 +3081,10 @@ input[type=range]::-ms-thumb {
 }
 
 @media (min-width: 75em) {
+  .form__error {
+    font-size: 1.25rem;
+  }
+
   .select_donate {
     width: 23.25rem;
   }
@@ -4029,6 +4135,10 @@ input[type=range]::-ms-thumb {
     font-size: 1.25rem;
   }
 
+  .donate {
+    padding-bottom: 3.125rem;
+  }
+
   .donate__title {
     padding-top: 5rem;
   }
@@ -4057,20 +4167,8 @@ input[type=range]::-ms-thumb {
     padding-bottom: 2.5rem;
   }
 
-  .payment__form {
-    padding-top: 2.5rem;
-  }
-
-  .payment__form {
-    padding-left: 2.5rem;
-  }
-
-  .payment__form {
-    padding-bottom: 2.8125rem;
-  }
-
-  .payment__form {
-    margin-bottom: 2.5rem;
+  .payment {
+    padding-bottom: 5rem;
   }
 
   .payment__button {
@@ -4107,6 +4205,22 @@ input[type=range]::-ms-thumb {
 
   .payment-form__img {
     height: 2.1875rem;
+  }
+
+  .payment-form__inputs {
+    padding-top: 2.5rem;
+  }
+
+  .payment-form__inputs {
+    padding-left: 2.5rem;
+  }
+
+  .payment-form__inputs {
+    padding-bottom: 2.8125rem;
+  }
+
+  .payment-form__inputs {
+    margin-bottom: 2.5rem;
   }
 
   .payment-form__input-box_sum {
@@ -4177,12 +4291,12 @@ input[type=range]::-ms-thumb {
     font-size: 1rem;
   }
 
-  .not-found-page section {
+  .not-found-page__section {
     padding-top: 6.25rem;
   }
 
-  .not-found-page section {
-    padding-bottom: 3.125rem;
+  .not-found-page__section {
+    padding-bottom: 5rem;
   }
 
   .not-found-page__text {
@@ -4618,6 +4732,10 @@ input[type=range]::-ms-thumb {
 }
 
 @media (max-width: 20em) {
+  .form__error {
+    font-size: 0.75rem;
+  }
+
   .select_donate {
     width: 10.0625rem;
   }
@@ -5713,6 +5831,10 @@ input[type=range]::-ms-thumb {
     font-size: 0.75rem;
   }
 
+  .donate {
+    padding-bottom: 1.875rem;
+  }
+
   .donate__title {
     padding-top: 3.125rem;
   }
@@ -5741,20 +5863,8 @@ input[type=range]::-ms-thumb {
     padding-bottom: 1.875rem;
   }
 
-  .payment__form {
-    padding-top: 1.875rem;
-  }
-
-  .payment__form {
-    padding-left: 0.9375rem;
-  }
-
-  .payment__form {
-    padding-bottom: 1.875rem;
-  }
-
-  .payment__form {
-    margin-bottom: 1.875rem;
+  .payment {
+    padding-bottom: 3.125rem;
   }
 
   .payment__button {
@@ -5791,6 +5901,22 @@ input[type=range]::-ms-thumb {
 
   .payment-form__img {
     height: 1.25rem;
+  }
+
+  .payment-form__inputs {
+    padding-top: 1.875rem;
+  }
+
+  .payment-form__inputs {
+    padding-left: 0.9375rem;
+  }
+
+  .payment-form__inputs {
+    padding-bottom: 1.875rem;
+  }
+
+  .payment-form__inputs {
+    margin-bottom: 1.875rem;
   }
 
   .payment-form__input-box_sum {
@@ -5861,12 +5987,12 @@ input[type=range]::-ms-thumb {
     font-size: 0.75rem;
   }
 
-  .not-found-page section {
+  .not-found-page__section {
     padding-top: 3.125rem;
   }
 
-  .not-found-page section {
-    padding-bottom: 1.25rem;
+  .not-found-page__section {
+    padding-bottom: 3.125rem;
   }
 
   .not-found-page__text {
@@ -6285,6 +6411,18 @@ input[type=range]::-ms-thumb {
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
+@supports (font-size: clamp( 0.75rem , 0.5681818182rem  +  0.9090909091vw , 1.25rem )) {
+    .form__error {
+      font-size: clamp( 0.75rem , 0.5681818182rem  +  0.9090909091vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.5681818182rem  +  0.9090909091vw , 1.25rem )) {
+    .form__error {
+      font-size: calc(0.75rem + 0.5 * (100vw - 20rem) / 55);
+    }
+}
+
 @supports (width: clamp( 10.0625rem , 5.2670454545rem  +  23.9772727273vw , 23.25rem )) {
     .select_donate {
       width: clamp( 10.0625rem , 5.2670454545rem  +  23.9772727273vw , 23.25rem );
@@ -9353,6 +9491,18 @@ input[type=range]::-ms-thumb {
     }
 }
 
+@supports (padding-bottom: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem )) {
+    .donate {
+      padding-bottom: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem )) {
+    .donate {
+      padding-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 55);
+    }
+}
+
 @supports (padding-top: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem )) {
     .donate__title {
       padding-top: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem );
@@ -9437,51 +9587,15 @@ input[type=range]::-ms-thumb {
     }
 }
 
-@supports (padding-top: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
-    .payment__form {
-      padding-top: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem );
+@supports (padding-bottom: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem )) {
+    .payment {
+      padding-bottom: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem );
     }
 }
 
-@supports not (padding-top: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
-    .payment__form {
-      padding-top: calc(1.875rem + 0.625 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (padding-left: clamp( 0.9375rem , 0.3693181818rem  +  2.8409090909vw , 2.5rem )) {
-    .payment__form {
-      padding-left: clamp( 0.9375rem , 0.3693181818rem  +  2.8409090909vw , 2.5rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , 0.3693181818rem  +  2.8409090909vw , 2.5rem )) {
-    .payment__form {
-      padding-left: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (padding-bottom: clamp( 1.875rem , 1.5340909091rem  +  1.7045454545vw , 2.8125rem )) {
-    .payment__form {
-      padding-bottom: clamp( 1.875rem , 1.5340909091rem  +  1.7045454545vw , 2.8125rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 1.875rem , 1.5340909091rem  +  1.7045454545vw , 2.8125rem )) {
-    .payment__form {
-      padding-bottom: calc(1.875rem + 0.9375 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
-    .payment__form {
-      margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
-    .payment__form {
-      margin-bottom: calc(1.875rem + 0.625 * (100vw - 20rem) / 55);
+@supports not (padding-bottom: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem )) {
+    .payment {
+      padding-bottom: calc(3.125rem + 1.875 * (100vw - 20rem) / 55);
     }
 }
 
@@ -9590,6 +9704,54 @@ input[type=range]::-ms-thumb {
 @supports not (height: clamp( 1.25rem , 0.9090909091rem  +  1.7045454545vw , 2.1875rem )) {
     .payment-form__img {
       height: calc(1.25rem + 0.9375 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
+    .payment-form__inputs {
+      padding-top: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
+    .payment-form__inputs {
+      padding-top: calc(1.875rem + 0.625 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-left: clamp( 0.9375rem , 0.3693181818rem  +  2.8409090909vw , 2.5rem )) {
+    .payment-form__inputs {
+      padding-left: clamp( 0.9375rem , 0.3693181818rem  +  2.8409090909vw , 2.5rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.9375rem , 0.3693181818rem  +  2.8409090909vw , 2.5rem )) {
+    .payment-form__inputs {
+      padding-left: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 1.5340909091rem  +  1.7045454545vw , 2.8125rem )) {
+    .payment-form__inputs {
+      padding-bottom: clamp( 1.875rem , 1.5340909091rem  +  1.7045454545vw , 2.8125rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.5340909091rem  +  1.7045454545vw , 2.8125rem )) {
+    .payment-form__inputs {
+      padding-bottom: calc(1.875rem + 0.9375 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
+    .payment-form__inputs {
+      margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
+    .payment-form__inputs {
+      margin-bottom: calc(1.875rem + 0.625 * (100vw - 20rem) / 55);
     }
 }
 
@@ -9774,26 +9936,26 @@ input[type=range]::-ms-thumb {
 }
 
 @supports (padding-top: clamp( 3.125rem , 1.9886363636rem  +  5.6818181818vw , 6.25rem )) {
-    .not-found-page section {
+    .not-found-page__section {
       padding-top: clamp( 3.125rem , 1.9886363636rem  +  5.6818181818vw , 6.25rem );
     }
 }
 
 @supports not (padding-top: clamp( 3.125rem , 1.9886363636rem  +  5.6818181818vw , 6.25rem )) {
-    .not-found-page section {
+    .not-found-page__section {
       padding-top: calc(3.125rem + 3.125 * (100vw - 20rem) / 55);
     }
 }
 
-@supports (padding-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem )) {
-    .not-found-page section {
-      padding-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem );
+@supports (padding-bottom: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem )) {
+    .not-found-page__section {
+      padding-bottom: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem )) {
-    .not-found-page section {
-      padding-bottom: calc(1.25rem + 1.875 * (100vw - 20rem) / 55);
+@supports not (padding-bottom: clamp( 3.125rem , 2.4431818182rem  +  3.4090909091vw , 5rem )) {
+    .not-found-page__section {
+      padding-bottom: calc(3.125rem + 1.875 * (100vw - 20rem) / 55);
     }
 }
 
