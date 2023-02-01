@@ -6322,6 +6322,14 @@ input[type=range]::-ms-thumb {
     min-height: 56rem;
   }
 
+  .cards-big__content_full {
+    min-height: 29rem;
+  }
+
+  .cards-big__content_small {
+    min-height: 29rem;
+  }
+
   .cards-big__form {
     gap: 1.25rem;
   }
@@ -11241,12 +11249,44 @@ input[type=range]::-ms-thumb {
 }
 
 @media (max-width: 44.375em) and (min-width: 75em) {
+  .cards-big__content_full {
+    min-height: 22.9375rem;
+  }
+
+  .cards-big__content_small {
+    min-height: 22.9375rem;
+  }
+
   .cards-big__form {
     gap: 1.5625rem;
   }
 }
 
 @media (max-width: 44.375em) and (min-width: 20em) and (max-width: 75em) {
+@supports (min-height: clamp( 22.9375rem , 31.2045454545rem  +  -11.0227272727vw , 29rem )) {
+    .cards-big__content_full {
+      min-height: clamp( 22.9375rem , 31.2045454545rem  +  -11.0227272727vw , 29rem );
+    }
+}
+
+@supports not (min-height: clamp( 22.9375rem , 31.2045454545rem  +  -11.0227272727vw , 29rem )) {
+    .cards-big__content_full {
+      min-height: calc(29rem + -6.0625 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (min-height: clamp( 22.9375rem , 31.2045454545rem  +  -11.0227272727vw , 29rem )) {
+    .cards-big__content_small {
+      min-height: clamp( 22.9375rem , 31.2045454545rem  +  -11.0227272727vw , 29rem );
+    }
+}
+
+@supports not (min-height: clamp( 22.9375rem , 31.2045454545rem  +  -11.0227272727vw , 29rem )) {
+    .cards-big__content_small {
+      min-height: calc(29rem + -6.0625 * (100vw - 20rem) / 55);
+    }
+}
+
 @supports (gap: clamp( 1.25rem , 1.1363636364rem  +  0.5681818182vw , 1.5625rem )) {
     .cards-big__form {
       gap: clamp( 1.25rem , 1.1363636364rem  +  0.5681818182vw , 1.5625rem );
